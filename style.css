@@ -223,3 +223,50 @@ ul.main-menu a:hover{
 .footer-main .footer-inner a:hover{
     border-bottom: 1px solid black;
 }
+
+@media(max-width: 700px){
+    .showcase{
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: 300px;
+        background: url('./img/showcase_3.jpeg') no-repeat center center/cover;
+    }
+
+    .showcase .content{
+        width: 30%;
+        padding: 0px 10px 10px 10px;
+    }
+    .showcase p{
+        display: none;
+    }
+    .home-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+   
+    .xbox .content p{
+        display: none;
+    }
+    .e-change .content{
+        width: 60%;
+    }
+    .link-inner{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: left;
+    }
+
+}
+
+@media(max-width:400px){
+    .home-cards{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .link-inner{
+        grid-template-columns: 1fr;
+        justify-content: left;
+    }
+    .link-inner ul{
+        margin-top: 20px;
+    }
+}
