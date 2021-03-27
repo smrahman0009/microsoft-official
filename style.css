@@ -84,7 +84,7 @@ ul.main-menu a:hover{
 }
 
 .showcase{
-    background:url('/img/showcase.jpeg') no-repeat center center/cover;
+    background:url("/img/showcase.jpeg") no-repeat center center/cover;
     width: 100%;
     height: 500px;
     background-color: transparent;
@@ -242,6 +242,7 @@ ul.main-menu a:hover{
     }
 
     ul.main-menu{
+        transform: translateX(-500px);
         display: block;
         position: absolute;
         top: 0px;
@@ -252,7 +253,6 @@ ul.main-menu a:hover{
         border-right: #ccc 1px solid;
         opacity: 0.9;
         padding: 30px;
-        transform: translateX(-500px);
         transition: transform 0.5s ease-in-out;
     }
     ul.right-menu{
